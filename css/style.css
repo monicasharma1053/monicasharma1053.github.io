@@ -6,12 +6,22 @@
 	top: 51px;
 	left: 0;
 	background: rgba(115,223,240,0.95);
+	overflow: auto;
 }
+
+.overlay .container {
+	padding-bottom: 100px;
+}
+
+.overlay .container h2 {
+	margin-bottom: 40px;
+}
+
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -91,6 +101,12 @@
 	transform: translateY(0%) scale(1);
 	-webkit-transition: -webkit-transform 0.4s;
 	transition: transform 0.4s;
+}
+
+@media (max-width: 768px) {
+	.overlay .container {
+		padding-top: 10%;
+	}
 }
 
 @media screen and (max-height: 30.5em) {
